@@ -1,0 +1,42 @@
+.tittle {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 21.5vw;
+    color: rgba(137, 0, 53, 1);
+}
+
+.tittleCube {
+    display: flex;
+    justify-content: center;
+    gap: 1.2vw;
+    /* letter spaceing */
+}
+
+#tittleSpace{
+    letter-spacing: 0.2vw;
+}
+
+.subtittle {
+    color: black;
+    font-weight: 400;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 1.6vw;
+}
+
+#lastName1 {
+    font-size: 6.6vw;
+
+}
+
+#lastName2 {
+    font-size: 4.5vw;
+}
+
+.subtittle2{
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5vw;
+    padding-left: 0.46vw;
+    margin-top: -1vw;
+}
