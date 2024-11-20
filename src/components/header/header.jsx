@@ -1,14 +1,13 @@
 import React from "react";
 import "./header.css";
 
-const Header = () => {
+const Header = ({ colorName, colorSurname }) => {
+
     return (
         <header className="headerCube">
-            <section className="tittleCube">
-                <h1 className="tittle" id="tittleSpace">MATTHEW</h1>
-                    <h1 className="subtittle" id="lastName1">ANGULO</h1>
-                    <h1 className="subtittle" id="lastName2">CABALLERO</h1>
-            </section>
+            <h1 className="tittle" id="tittleSpace" style={{color: colorName}}>MATTHEW</h1>
+            <h1 className="subtittle" id="lastName1" style={{color: colorSurname}}>ANGULO</h1>
+            <h1 className="subtittle" id="lastName2" style={{color: colorSurname}}>CABALLERO</h1>
         </header>
     )
 }

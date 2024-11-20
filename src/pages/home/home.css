@@ -1,0 +1,114 @@
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    flex-grow: 1;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section2 {
+    height: 100%;
+    display: flex;
+    flex-direction: right;
+    justify-content: right;
+    align-items: center;
+}
+
+.aboutImage {
+    background-image: url('../../components/images/Image1.png');
+    background-size: cover;
+    background-position: center;
+    width: 78%;
+    height: 95%;
+    border-radius: 2vw;
+    margin-right: 4.5vw;
+
+}
+
+.homeTittle {
+    font-size: 6vw;
+    font-weight: 400;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    margin-left: 4.5vw;
+}
+
+.homeText {
+    margin-left: 4.5vw;
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    padding-top: 1vw;
+}
+
+.redBold {
+    font-weight: 800;
+    color: #890035;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .mainGrid {
+        grid-template-columns: 1fr;
+        flex-grow: unset;
+    }
+
+    .section1 {
+        order: 2;
+        width: 100%;
+        height: auto;
+        padding-top: 2vh;
+    }
+    
+    .section2 {
+        height: 30dvh;
+        padding-top: 2vh;
+        order: 1;
+    }
+
+    .aboutImage {
+        width: 100%;
+        height: 100%;
+        border-radius: 2vw;
+        margin-right: 4.5vw;
+        margin-left: 5.3vw;
+    }
+    
+    .homeTittle {
+        font-size: 15vw;
+        margin-right: 4.5vw;
+        margin-left: 5.3vw;
+    }
+    
+    .homeText {
+        font-size: 3vw;
+        padding-top: 2vw;
+        margin-right: 4.5vw;
+        margin-left: 5.3vw;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+        
+    .homeText {
+        font-size: 3.4vw;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .homeText {
+        font-size: 4.1vw;
+    }
+
+}
