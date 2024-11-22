@@ -1,10 +1,36 @@
 .mainGrid2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
     flex-grow: 1;
-    font-weight: 700;
+}
+
+.expSection1{
+    height: 100%;
+}
+
+.expImage{
+    height: 90%;
+    width: 90%;
+    background-image: url('../../components/images/image2.png');
+    background-size: cover;
+    margin-left: 5.1vw;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.expTittle{
+    margin-top: auto;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 8vw;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 7vw;
+}
+
+.expSection2{
+
 }
