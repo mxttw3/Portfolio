@@ -17,8 +17,6 @@
     border-radius: 2vw;
     display: flex;
     flex-direction: column;
-
-    
 }
 
 .expTittle{
@@ -29,8 +27,4 @@
     font-weight: 400;
     font-size: 8vw;
     color: white;
-}
-
-.expSection2{
-
 }
