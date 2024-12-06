@@ -1,6 +1,6 @@
 import './menu.css';
 
-const Header = ({ primaryColor, secondaryColor, shadow }) => {
+const menu = ({ primaryColor, secondaryColor, shadow }) => {
     const navigate = (path) => {
         window.location.href = path;
     };
@@ -28,4 +28,4 @@ const Header = ({ primaryColor, secondaryColor, shadow }) => {
     );
 };
 
-export default Header;
+export default menu;

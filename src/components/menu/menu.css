@@ -46,3 +46,9 @@ ul{
     display: block;
     transform: scale(60) translateY(-0.009vw);
 }
+
+@media (max-width: 1025px) {
+    .menuCube {
+        display: none;
+    }
+}

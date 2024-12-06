@@ -1,0 +1,82 @@
+@media (max-width: 1024px) {
+    .burguerMenuWrapper {
+        position: relative;
+    }
+
+    .burguerButton {
+        position: fixed;
+        bottom: 70vh;
+        left: 92vw;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        background-color: #303030;
+        border-top-left-radius: 4vw;
+        border-bottom-left-radius: 4vw;
+        transition: left 0.53s ease-in-out;
+    }
+
+    .burguerButton.open {
+        left: 17vw;
+        transition: left 0.53s ease-in-out;
+    }
+
+    .burguerButton.close {
+        left: 92vw;
+        transition: left 0.42s ease-in-out;
+    }
+
+    .burguerIcon {
+        width: 3.5vw;
+        margin-top: 2.3vw;
+        margin-bottom: 2.3vw;
+        margin-right: 100vw;
+    }
+
+    .burguerMenu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.5s ease-in-out;
+        display: flex;
+        color: white;
+        z-index: 1000;
+        width: 75vw;
+        height: 100vh;
+    }
+
+    .burguerMenu.open {
+        right: 0;
+    }
+
+    .burguerMenu ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burguerMenu li {
+        padding: 15px 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    .burguerMenu li:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 1025px) {
+    .burguerButton {
+        display: none;
+    }
+
+    .burguerMenu {
+        display: none;
+    }
+}

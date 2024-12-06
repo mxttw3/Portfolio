@@ -6,6 +6,7 @@ import Projects from './pages/projects/projects'
 import Skills from './pages/skills/skills'
 import Contact from './pages/contact/contact'
 import { useEffect, useState } from "react";
+import BurguerMenu from './components/burguerMenu/burguerMenu';
 import './app.css';
 
 function App() {
@@ -18,7 +19,6 @@ function App() {
 
 
   useEffect(() => {
-
     const path = window.location.pathname;
     const fullBody = document.getElementById("fullBody");
 
@@ -81,6 +81,7 @@ function App() {
       <Header colorName={varColorName} colorSurname={varColorSurname} />
       {renderComponent()}
       <Menu primaryColor={varColorMenu} secondaryColor={varSecondaryColorMenu} shadow={varShadowMenu}/>
+      <BurguerMenu />
     </div>
   );
 }
