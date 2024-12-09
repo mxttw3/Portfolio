@@ -32,6 +32,11 @@
         margin-top: 2.3vw;
         margin-bottom: 2.3vw;
         margin-right: 100vw;
+        transition: rotate 0.5s ease-in-out;
+    }
+
+    .burguerIcon.open2{
+        rotate: 180deg;
     }
 
     .burguerMenu {
@@ -40,7 +45,7 @@
         right: -100%;
         transition: right 0.5s ease-in-out;
         display: flex;
-        color: white;
+        color: rgba(216, 215, 215, 0.783);
         z-index: 1000;
         width: 75vw;
         height: 100vh;
@@ -60,10 +65,10 @@
 
     .burguerMenu li {
         padding: 15px 0;
-        font-size: 1.5rem;
+        font-size: 6vw;
         cursor: pointer;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .burguerMenu li:hover {
@@ -79,4 +84,9 @@
     .burguerMenu {
         display: none;
     }
+}
+
+li.active {
+    color: white;
+    font-weight: 700;
 }
