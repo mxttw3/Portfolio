@@ -28,3 +28,135 @@
     font-size: 8vw;
     color: white;
 }
+
+.expSection2{
+    height: 100%;
+    width: 100%;
+}
+
+.round{
+    border-radius: 100%;
+    background-color: white;
+    width: 1.2vw;
+    height: 1.2vw;
+    flex-shrink: 0;
+}
+
+.timeLine1{
+    display: flex;
+}
+
+.textCubeExp{
+    margin-left: 1vw;
+}
+
+.timeTittle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.timeText{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.5vw;
+}
+
+#paddingTopExp{
+    padding-top: 4vw;
+}
+
+/* en medio */
+
+.expSection2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textCubeExp a{
+    text-decoration: none;
+    color: #C6004D;
+}
+
+.paddingTopExp{
+    padding-top: 1vw;
+}
+
+.linkedin{
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    color: white;
+    text-decoration: none;
+}
+
+.positionExp{
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+}
+
+@media (max-width: 1024px) {
+    .mainGrid2 {
+        grid-template-columns: 1fr;
+        flex-grow: unset;
+    }
+
+    .expSection1 {
+        width: 100%;
+        height: 43dvh;
+        padding-top: 2dvh;
+    }
+
+    .expTittle {
+        font-size: 16vw;
+    }
+
+    .round{
+        width: 1.6dvh;
+        height: 1.6dvh;
+        margin-top: 0.3dvh;
+    }
+
+    .timeTittle {
+        font-size: 2.4dvh;
+    }
+
+    .textCubeExp {
+        margin-left: 3vw;
+    }
+
+    .paddingTopExp{
+        width: 90%;
+    }
+
+    .timeText {
+        font-size: 1.8dvh;
+        margin-top: 1dvh;
+    }
+
+    #paddingTopExp{
+        padding-top: 9vw;
+    }
+
+    .linkedin{
+        font-size: 4vw;
+    }
+    
+    .positionExp{
+        bottom: 2%;
+        right: 5%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .linkedin{
+        font-size: 7vw;
+    }
+
+}
