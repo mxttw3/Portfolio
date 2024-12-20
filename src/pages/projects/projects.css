@@ -1,10 +1,166 @@
 .mainGrid4{
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-grow: 1;
-    font-weight: 700;
-    color: #303030;
-    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    flex-direction: column;
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 89.5%;
+}
+
+.left,
+.center,
+.right {
+    flex: 0 0 auto;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container2 div{
+    font-family: 'Anton', sans-serif;
+    font-weight: 600;
+    font-size: 6vw;
+
+}
+
+.center p{
     font-size: 7vw;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;    
+    scrollbar-width: none;
+    padding-bottom: 1.5vw;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Oculta scrollbar en Chrome/Safari */
+}
+
+#carrouselpaddingLeft{
+    margin-left: 5vw;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 35vw;
+    background-color: white;
+    border-radius: 0.8vw;
+    overflow: hidden;
+    scroll-snap-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projectImages{
+    width: 100%;
+    height: 20vw;
+    background-color: red;
+}
+
+.text-container {
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.carrouseltitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1vw;
+    color: #333;
+}
+
+.text-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.8vw;    
+    color: #666;
+}
+
+.carrouseltitle::first-letter{
+    color: #C6004D;
+}
+
+@media (max-width: 1024px) {
+
+    .container2 div{
+        font-size: 18vw;
+    
+    }
+    
+    .center p{
+        font-size: 19vw;
+    }
+
+    .carousel{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    
+    .projectImages{
+        height: 65vw;
+    }
+    
+    .carousel-item {
+        width: 120vw;
+    }
+
+    .text-container {
+        padding: 2vw;
+        gap: 1.2vw;
+    }
+    
+    .carrouseltitle {
+        font-size: 3.5vw;
+    }
+    
+    .text-container p {
+        font-size: 2.5vw;    
+    }
+
+}
+
+@media (max-width: 767px) {
+    .projectImages{
+        height: 100vw;
+    }
+    
+    .carousel-item {
+        width: 180vw;
+    }
+
+    .carrouseltitle {
+        font-size: 4.3vw;
+    }
+    
+    .text-container p {
+        font-size: 3.3vw;    
+    }
+
+    .text-container {
+        padding: 2.5vw;
+        gap: 1.9vw;
+    }
 }
