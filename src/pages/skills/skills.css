@@ -8,3 +8,166 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 7vw;
 }
+
+.skillsContainer{
+    width: 90%;
+    height: 90%;
+    background-image: url('../../components/images/skillsBack.png');
+    background-size: cover;
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerSkills{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 7.5vw;
+}
+
+.skillsTitle{
+    font-family: 'Anton', sans-serif;
+    font-size: 10vw;
+    color: white;
+    font-weight: 700;
+}
+
+.logosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+}
+
+.logoImage {
+    display: block;
+    height: auto;
+    max-width: 100%; 
+    flex: 0 0 auto;
+}
+
+#jsLogo{
+    width: 5vw;
+}
+
+#phpLogo{
+    width: 10vw;
+
+}
+
+#reactLogo{
+    width: 6vw;
+}
+
+#nextLogo{
+    width: 5vw;
+}
+
+#nodeLogo{
+    width: 9vw;
+}
+
+#sqlLogo{
+    width: 5vw;
+}
+
+#mongoLogo{
+    width: 5.5vw;
+}
+
+#figmaLogo{
+    width: 3.5vw;
+}
+
+
+@media (max-width: 1024px) {
+    #jsLogo{
+        width: 12vw;
+    }
+    
+    #phpLogo{
+        width: 22vw;
+    
+    }
+    
+    #reactLogo{
+        width: 14vw;
+    }
+    
+    #nextLogo{
+        width: 14vw;
+    }
+    
+    #nodeLogo{
+        width: 21vw;
+    }
+    
+    #sqlLogo{
+        width: 13vw;
+    }
+    
+    #mongoLogo{
+        width: 15vw;
+    }
+    
+    #figmaLogo{
+        width: 8.8vw;
+    }
+
+    .logosContainer {
+        gap: 5vw;
+    }
+
+    .skillsTitle{
+        font-size: 20vw;
+    }
+    
+}
+
+@media (max-width: 767px) {
+
+    #jsLogo{
+        width: 19vw;
+    }
+    
+    #phpLogo{
+        width: 35vw;
+    
+    }
+    
+    #reactLogo{
+        width: 22vw;
+    }
+    
+    #nextLogo{
+        width: 20vw;
+    }
+    
+    #nodeLogo{
+        width: 32vw;
+    }
+    
+    #sqlLogo{
+        width: 20vw;
+    }
+    
+    #mongoLogo{
+        width: 22vw;
+    }
+    
+    #figmaLogo{
+        width: 13vw;
+    }
+
+    .skillsTitle{
+        font-size: 24vw;
+    }
+
+    .logosContainer {
+        gap: 3.8vw;
+    }
+}
