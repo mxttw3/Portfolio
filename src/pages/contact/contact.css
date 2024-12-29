@@ -1,10 +1,201 @@
 .mainGrid3{
+ /* grid de 3 columnas */
+    display: grid;
+    grid-template-columns: 7fr 6fr 1fr;
+    gap: 3vw;
+}
+
+.contactTittle {
+    font-weight: 400;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'Anton', sans-serif;
+    font-size: 10vw;
+    margin-right: 4.3vw;
+}
+
+.section2Contact{
+    background-image: url(../../components/images/contactImg.avif);
+    background-size: cover;
+    border-radius: 3vw;
+}
+
+.contactInfo{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
-    font-weight: 700;
-    color: #303030;
+    gap: 5vw;
+    height: 40%;
+}
+
+.section1Contact{
+    margin-left: 5.5vw;
+}
+
+.centerItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    cursor: pointer;
+}
+
+.centerItems img{
+    width: 3.5vw;
+    height: auto;
+}
+
+.centerItems p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 7vw;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+.emailContact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+}
+
+.emailContact div{
+    width: 90%;
+    height: 90%;
+    background-color: #303030;
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.emailContact div h3{
+    font-family: 'Anton', sans-serif;
+    font-size: 12vw;
+    color: white;
+}
+
+.button-back {
+    display: none;
+    color: white;
+}
+
+#textEmail1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+#textEmail2{
+    font-family: 'Anton', sans-serif;
+    font-size: 5vw;
+}
+.emailContact:hover .button-front {
+    display: none;
+
+}
+
+.emailContact:hover .button-back {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+
+    .mainGrid3{
+        grid-template-columns: 1fr;
+        height: 90dvh;
+        gap: 2dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section2Contact{
+        width: 90%;
+        height: 40%;
+    }
+    .section3Contact{
+        display: none;
+    }
+
+    .section1Contact{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .emailContact{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .button-back {
+        display: block;
+    }
+
+    .button-front {
+        display: none;
+    }
+
+    .emailContact div{
+        gap: 4vw;
+        border-radius: 5vw;
+    }
+
+    #textEmail1{
+        font-size: 4.5vw;
+    }
+    
+    #textEmail2{
+        font-size: 13vw;
+    }
+    
+    .centerItems img{
+        width: 9vw;
+    }
+    
+    .centerItems p{
+        font-size: 3vw;
+    }
+
+    .centerItems{
+        gap: 1.5vw;
+    }
+
+    .contactInfo{
+        gap: 15vw;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .centerItems img{
+        width: 11vw;
+    }
+    
+    .centerItems p{
+        font-size: 4.2vw;
+    }
+
+    .contactInfo{
+        gap: 9vw;
+    }
+
+    #textEmail1{
+        font-size: 5vw;
+    }
+    
+    #textEmail2{
+        font-size: 13.5vw;
+    }
 }

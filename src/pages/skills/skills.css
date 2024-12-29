@@ -12,7 +12,7 @@
 .skillsContainer{
     width: 90%;
     height: 90%;
-    background-image: url('../../components/images/skillsBack.png');
+    background-image: url('../../components/images/skillsBack.avif');
     background-size: cover;
     border-radius: 2vw;
     display: flex;
@@ -48,39 +48,40 @@
     height: auto;
     max-width: 100%; 
     flex: 0 0 auto;
+    cursor: pointer;
 }
 
 #jsLogo{
-    width: 5vw;
+    width: 5.5vw;
 }
 
 #phpLogo{
-    width: 10vw;
+    width: 9vw;
 
 }
 
 #reactLogo{
-    width: 6vw;
+    width: 5.9vw;
 }
 
 #nextLogo{
-    width: 5vw;
+    width: 5.6vw;
 }
 
 #nodeLogo{
-    width: 9vw;
+    width: 8.5vw;
 }
 
 #sqlLogo{
-    width: 5vw;
+    width: 4.8vw;
 }
 
-#mongoLogo{
-    width: 5.5vw;
+#firebaseLogo{
+    width: 5.3vw;
 }
 
 #figmaLogo{
-    width: 3.5vw;
+    width: 5.5vw;
 }
 
 
@@ -110,12 +111,12 @@
         width: 13vw;
     }
     
-    #mongoLogo{
+    #firebaseLogo{
         width: 15vw;
     }
     
     #figmaLogo{
-        width: 8.8vw;
+        width: 14.5vw;
     }
 
     .logosContainer {
@@ -135,7 +136,7 @@
     }
     
     #phpLogo{
-        width: 35vw;
+        width: 32vw;
     
     }
     
@@ -148,19 +149,19 @@
     }
     
     #nodeLogo{
-        width: 32vw;
+        width: 31vw;
     }
     
     #sqlLogo{
-        width: 20vw;
+        width: 19vw;
     }
     
-    #mongoLogo{
-        width: 22vw;
+    #firebaseLogo{
+        width: 21vw;
     }
     
     #figmaLogo{
-        width: 13vw;
+        width: 21.2vw;
     }
 
     .skillsTitle{
@@ -168,6 +169,6 @@
     }
 
     .logosContainer {
-        gap: 3.8vw;
+        gap: 2.5vw;
     }
 }

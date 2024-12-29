@@ -13,6 +13,7 @@ function App() {
   const [varColorName, setColorName] = useState('#890035');
   const [varColorSurname, setColorSurname] = useState('black');
   const [varColorMenu, setvarColorMenu] = useState('#303030');
+  const [varColorMenuText, setvarColorMenuText] = useState('#303030');
   const [varSecondaryColorMenu, setSecondaryColorMenu] = useState('white');
   const [varShadowMenu, setShadowMenu] = useState('rgba(255, 255, 255, 0.5) 0px 1px 8px');
   const [varComp, serVarComp] = useState(0)
@@ -32,12 +33,14 @@ function App() {
         setColorName('#C6004D')
         setColorSurname('white')
         setvarColorMenu('white')
+        setvarColorMenuText('white')
         setSecondaryColorMenu('#303030')
         setShadowMenu('rgba(60, 60, 60, 0.7) 0px 1px 5px')
         serVarComp(1)
         break;
       case "/projects":
           fullBody.style.backgroundColor = "white";
+          setvarColorMenuText('#C6004D')
           serVarComp(2)
           break;
       case "/skills":
@@ -45,12 +48,14 @@ function App() {
           setColorName('#C6004D')
           setColorSurname('white')
           setvarColorMenu('white')
+          setvarColorMenuText('white')
           setSecondaryColorMenu('#303030')
           setShadowMenu('rgba(60, 60, 60, 0.7) 0px 1px 5px')
           serVarComp(3)
           break;
       case "/contact":
           fullBody.style.backgroundColor = "white";
+          setvarColorMenuText('#C6004D')
           serVarComp(4)
           break;
       default:
@@ -71,7 +76,7 @@ function App() {
       case 4:
         return <Contact />
       default:
-        // hacer pagina 404
+        //TODO: hacer pagina 404
         return <Home />;
     }
   };
@@ -80,7 +85,7 @@ function App() {
     <div id='fullBody'>
       <Header colorName={varColorName} colorSurname={varColorSurname} />
       {renderComponent()}
-      <Menu primaryColor={varColorMenu} secondaryColor={varSecondaryColorMenu} shadow={varShadowMenu}/>
+      <Menu primaryColor={varColorMenu} secondaryColor={varSecondaryColorMenu} shadow={varShadowMenu} primaryColorText={varColorMenuText}/>
       <BurguerMenu />
     </div>
   );

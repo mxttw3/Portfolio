@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import "./projects.css";
-import Image1 from "../../components/images/project1.png";
-import Image2 from "../../components/images/project2.png";
-import Image3 from "../../components/images/project3.png";
+import Image1 from "../../components/images/project1.avif";
+import Image2 from "../../components/images/project2.avif";
+import Image3 from "../../components/images/project3.avif";
 
 const Projects = () => {
     const carouselRef = useRef(null);
@@ -20,7 +20,7 @@ const Projects = () => {
             title: "Conregfluid.com (Solenoid Valves)",
             description: "Currently under development in Next.js with SQL.",
             image: Image2,
-            link: "http://localhost:3000/projects",
+            link: "http://matthewangulo.com/projects",
         },
         {
             id: 3,
