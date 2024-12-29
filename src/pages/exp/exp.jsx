@@ -29,7 +29,7 @@ const Exp = () => {
                         <div className="round"></div>
                         <div className="textCubeExp">
                             <p className="timeTittle"><a>W</a>ebsite for Nicstorm (Berlin)</p>
-                            <p className="timeText">Creative portfolo website for a music producer, <a href="https://www.nicstorm.com">nicstorm.com</a></p>
+                            <p className="timeText">Creative portfolo website for a music producer, <a href="https://nicstorm.com">nicstorm.com</a></p>
                         </div>
                     </div>
                 </div>
