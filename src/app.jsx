@@ -40,7 +40,6 @@ function App() {
         break;
       case "/projects":
           fullBody.style.backgroundColor = "white";
-          setvarColorMenuText('#C6004D')
           serVarComp(2)
           break;
       case "/skills":

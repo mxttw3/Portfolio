@@ -1,100 +1,69 @@
 .mainGrid4{
-    display: flex;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.container2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 89.5%;
-}
 
-.left,
-.center,
-.right {
-    flex: 0 0 auto;
-}
-
-.center {
-    margin: 0 auto;
-    text-align: center;
-}
-
-.container2 div{
-    font-family: 'Anton', sans-serif;
-    font-weight: 600;
-    font-size: 6vw;
-
-}
-
-.center p{
-    font-size: 7vw;
-}
-
-.carousel-container {
+.carousel{
     width: 100%;
-    overflow-x: hidden;
-    position: relative;
-}
-
-.carousel {
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;    
+    height: 34em;
+    overflow: scroll;
     scrollbar-width: none;
-    padding-bottom: 1.5vw;
+    display: flex;
+    align-items: center;
+    gap: 5em;
 }
 
 .carousel::-webkit-scrollbar {
-    display: none; /* Oculta scrollbar en Chrome/Safari */
+    display: none;
 }
 
-#carrouselpaddingLeft{
-    margin-left: 5vw;
+.carousel-item img {
+    width: 47em;
+    height: 25.2em;
+    object-fit: cover;
 }
 
 .carousel-item {
     flex: 0 0 auto;
-    width: 35vw;
     background-color: white;
-    border-radius: 0.8vw;
+    border-radius: 1.2em;
     overflow: hidden;
     scroll-snap-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(153, 153, 153, 0.39);
     position: relative;
+    transition: transform 1s;
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.carousel-item:hover {
+    transform: scale(1.05);
 }
 
-.projectImages{
-    width: 100%;
-    height: 20vw;
+#carrouselpaddingLeft{
+    margin-left: 5em;
 }
 
 .text-container {
-    padding: 1vw;
+    padding: 1.2em;
     display: flex;
     flex-direction: column;
-    gap: 0.5vw;
+    gap: 0.5em;
 }
 
 .carrouseltitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 1.1vw;
+    font-size: 1.55em;
     color: #333;
 }
 
 .text-container p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 0.8vw;    
+    font-size: 1.1em;    
     color: #666;
 }
 
@@ -103,63 +72,85 @@
 }
 
 @media (max-width: 1024px) {
-
-    .container2 div{
-        font-size: 18vw;
-    
-    }
-    
-    .center p{
-        font-size: 19vw;
-    }
-
     .carousel{
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin-top: 2em;
+        padding-bottom: 3em;
+        flex-direction: column;
+        overflow: scroll;
+        gap: 3em;
+        height: auto;
     }
-    
-    .projectImages{
-        height: 65vw;
-    }
-    
-    .carousel-item {
-        width: 120vw;
-    }
-
-    .text-container {
-        padding: 2vw;
-        gap: 1.2vw;
-    }
-    
-    .carrouseltitle {
-        font-size: 3.5vw;
-    }
-    
-    .text-container p {
-        font-size: 2.5vw;    
+    #carrouselpaddingLeft{
+        margin-left: 0;
     }
 
+    .carousel-item:hover {
+        transform: scale(1);
+    }
+    
 }
 
-@media (max-width: 767px) {
-    .projectImages{
-        height: 100vw;
+@media (max-width: 840px) {
+
+    .carousel-item img {
+        width: 30em;
+        height: 17.1em;
     }
     
     .carousel-item {
-        width: 180vw;
+        width: 30em;
     }
 
     .carrouseltitle {
-        font-size: 4.3vw;
+        font-size: 1.3em;
     }
     
     .text-container p {
-        font-size: 3.3vw;    
+        font-size: 1em;    
+    }
+   
+}
+
+@media (max-width: 524px) {
+    .carousel-item img {
+        width: 23em;
+        height: 13em;
+    }
+    
+    .carousel-item {
+        width: 23em;
     }
 
-    .text-container {
-        padding: 2.5vw;
-        gap: 1.9vw;
+    .carrouseltitle {
+        font-size: 1.2em;
+    }
+    
+    .text-container p {
+        font-size: 0.9em;  
+        line-height: 1.3;  
+    }
+}
+
+
+@media (max-width: 412px) {
+    .carousel{
+        gap: 2em;
+    }
+    .carousel-item img {
+        width: 19em;
+        height: 10.5em;
+    }
+    
+    .carousel-item {
+        width: 19em;
+    }
+
+    .carrouseltitle {
+        font-size: 1em;
+    }
+    
+    .text-container p {
+        font-size: 0.8em;  
+        line-height: 1.3;  
     }
 }
